@@ -1,0 +1,32 @@
+
+.navbar{
+    height: 100px;
+    background-color: #00BF63;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.img-fluid  {
+    max-width: 7%;
+    height: auto;
+}
+
+.left{
+  transform:rotate(-24deg);
+}
+.right{
+   transform:rotate(24deg);
+}
+.heading{
+    font-size: 35px;
+    font-family: fantasy;
+    margin: 1%;
+}
+.arrow{
+    font-size: 35px;
+    align-self: center;
+    display: flex;
+    padding-left: 3%;
+}

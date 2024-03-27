@@ -1,0 +1,24 @@
+.Square {
+    background-color: #cdf55c; 
+    border-radius: 7px;
+    padding: 14px;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+  }
+  
+  .circle-container {
+    margin-top: 10%; /* You can remove this margin if not needed */
+  }
+  .comment{
+    font-size: 15px;
+    color: grey;
+    font-family: system-ui;
+    padding:12px;
+  }
+  .CommentSection{
+    background-color: #c6ed58;
+    border-radius: 9px;
+    padding:15px;
+  }

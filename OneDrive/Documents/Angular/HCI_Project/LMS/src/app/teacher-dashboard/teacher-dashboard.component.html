@@ -1,0 +1,60 @@
+
+<div style="background-color:rgb(227 255 147);">
+
+    <div *ngFor="let i of [0, 1, 2]">
+        <div *ngIf="sessionHide[i]" class="row center">
+            <div (mouseenter)="SessionHide(i)" class="col-md-10 session">
+                CSE - {{i+1}}
+            </div>
+        </div>
+        <div *ngIf="!sessionHide[i]" (mouseleave)="SessionHide(i)" class="row center"
+            style="display:flex;justify-content:space-evenly">
+            <div class="col-md-3 Square">
+                <ul style="list-style-type: none;">
+                    <li>Quiz - 1 <span><i class="fa-solid fa-book-open-reader"></i></span></li>
+                    <li routerLink="/teacherAssignmentOverview" >Assignment 1 <span><i class="fa-solid fa-pen"></i></span></li>
+                    <li><span><i class="fa-solid fa-plus"></i></span></li>
+                    <!-- <li><button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal">Notes</button></li> -->
+                </ul>
+            </div>
+           
+            <div class="col-md-3 Square ">
+                <div style="margin-top:10%;align-items: center;">
+                    <circle-progress [percent]="70" [space]="-10" [radius]="50" [outerStrokeWidth]="10"
+                        [innerStrokeWidth]="10" [outerStrokeColor]="'#00bF63'" [innerStrokeColor]="'#e7e8ea'"
+                        [animation]="true" [animationDuration]="1000"></circle-progress>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Button trigger modal -->
+
+
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Notes: CSE - 1</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div *ngFor="let i of [0, 1, 2]">
+                    {{notes[i]}} <span>  <i class="fa-solid fa-trash"></i></span>
+                </div>
+                <br>
+                <br>
+                <div style = "display:flex; justify-content: space-between;">
+                    <input class="form-control" type="text" placeholder="Enter notes" >
+                    <button class = "btn btn-success" >Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

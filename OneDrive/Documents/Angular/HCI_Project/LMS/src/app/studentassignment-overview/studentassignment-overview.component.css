@@ -1,0 +1,92 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(218, 255, 114, 0.77);
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+  
+  header {
+    background-color: #00bF63;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px; /* Add margin for spacing */
+  }
+  
+  main {
+    display: flex;
+  }
+  
+  .return-arrow {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #000000;
+    text-decoration: none;
+    padding: 5px;
+  }
+  
+  .sidebar {
+    width: 200px;
+    background-color: rgba(218, 255, 114, 0.77);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    border-right: 2px solid white; /* Add border to the right side */
+  }
+  
+  .sidebar h2 {
+    margin-top: 0;
+  }
+  
+  .sidebar ul {
+    list-style: none; /* Remove default list-style */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  /* Assignment Details section */
+  .assignment-details {
+    margin-bottom: 20px;
+  }
+  
+  .document {
+    margin-bottom: 20px;
+  }
+  
+  /* Deadline and Upload section */
+  .deadline-upload-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .deadline,
+  .upload-section {
+    width: 48%; /* Adjust as needed */
+  }
+  
+  .countdown {
+    color: red;
+  }
+  
+  .upload-button {
+    display: block;
+    width: 200px;
+    background-color: #00bF63;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .upload-button:hover {
+    background-color: #00bF63;
+  }
+  

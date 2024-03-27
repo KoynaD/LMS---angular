@@ -1,0 +1,47 @@
+.menu{
+    width:300px;
+    border-right: 1px solid #d3d7db;
+}
+
+.mat-nav-list .mat-list-item:hover{
+    background-color: lightblue;
+}
+
+.fc .fc-button-primary:disabled {
+    display: none!;
+    
+}
+/* div.fc-header-toolbar.fc-toolbar.fc-toolbar-ltr{
+    background-color: aqua;
+}
+button.fc-next-button.fc-button.fc-button-primary{
+    background-color: azure;
+}
+button.fc-prev-button.fc-button.fc-button-primary{
+    background-color: azure;
+} */
+
+full-calendar div.fc-header-toolbar.fc-toolbar.fc-toolbar-ltr {
+    background-color: aqua;
+  }
+
+:root {
+    --fc-small-font-size: .85em;
+    --fc-page-bg-color: #fff;
+    --fc-neutral-bg-color: rgba(208, 208, 208, 0.3);
+    --fc-neutral-text-color: #808080;
+    --fc-border-color: #ddd;
+  
+    --fc-button-text-color: #fff;
+    --fc-button-bg-color: yellow;
+    --fc-button-border-color: #2C3E50;
+    --fc-button-hover-bg-color: #1e2b37;
+    --fc-button-hover-border-color: #1a252f;
+    --fc-button-active-bg-color: #1a252f;
+    --fc-button-active-border-color: #151e27;  
+}
+
+
+:root {
+    --fc-daygrid-event-dot-width: 8px;
+  }

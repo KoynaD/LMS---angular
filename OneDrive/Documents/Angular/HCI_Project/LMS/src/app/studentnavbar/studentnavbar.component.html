@@ -1,0 +1,24 @@
+<nav class="navbar bg-body-tertiary">
+    <div class="row container-fluid">
+      <div class="col-md-3" style = "display:flex;align-items: center;">
+        <img class = "img-fluid logo" src="../../assets/logoinGreen.jpg">
+        <p class = "logoName">LearnSmart</p>
+      </div>
+      <div class="col-md-4 d-flex justify-content-md-right">
+          <input class="form-control" *ngIf="bar">
+          <i class="fa-solid fa-magnifying-glass icon" (mouseenter)="onSearchIconHover(true)"></i>
+          <i class="fa-regular fa-bell icon"></i>
+          <i class="fa-regular fa-user icon"></i>
+      </div>
+    </div>
+  </nav>
+  <div style = "position:relative; background-color:rgba(218, 255, 114, 0.77)">
+    <div class="row">
+        <div class="col-md-3">
+            <app-menu [menuScreen]="menuScreen" ></app-menu>
+        </div>
+        <div class="col-md">
+            <app-studentdashboard></app-studentdashboard>
+        </div>
+    </div>
+  </div>

@@ -1,0 +1,50 @@
+
+<body>
+    <div class="main">      
+        <input type="checkbox" id="chk" aria-hidden="true">
+    
+        <div class="signup">
+                <div class="logo-container">
+                    <img src="assets\logo-removebg-preview.png" alt="Logo">
+                    <h1>LearnSmart</h1>
+                </div>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            <span id="emailError" class="error-message" style="color: red; display: none;">Please enter a valid email address.</span>
+            
+            <div style="position: relative;">
+                <input type="password" name="pswd" id="password" placeholder="Password" required="">
+                <i class="eye-icon" onclick="togglePasswordVisibility()">&#128065;</i>
+            </div>
+            <span id="passwordError" style="color: red; display: none;">Please enter a password.</span>
+    
+            <button type="button" onclick="validateForm()">Sign up</button>
+        </div>
+    
+    
+        <div class="login">
+            <form [formGroup] = "reactiveForm" (ngSubmit)="onLogin()">
+                <label for="chk" aria-hidden="true">Welcome!</label>
+                <input type="email" formControlName="EmailId" placeholder="Email" required>
+                <input type="password" formControlName="Password" name="pswd" placeholder="Password" required="">
+                <input type = "submit" value = "Submit" id = "btn">
+            </form>
+        </div>
+    </div>
+    <script>
+        function validateForm() {
+            var emailInput = document.getElementById('email');
+            var emailError = document.getElementById('emailError');
+
+            // Regular expression for email validation
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (!emailRegex.test(emailInput.value)) {
+                emailError.style.display = 'block';
+            } else {
+                emailError.style.display = 'none';
+                // Proceed with form submission
+                // For demonstration purposes, I'm just logging a message here
+                console.log('Form submitted successfully!');
+            }
+        }
+    </script>

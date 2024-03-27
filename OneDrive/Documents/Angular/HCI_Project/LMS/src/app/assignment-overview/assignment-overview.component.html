@@ -1,0 +1,62 @@
+<div>
+    <div class="row">
+        <p>&nbsp;</p>
+    </div>
+    <div style = "display:flex;justify-content: center;">
+        <iframe src="https://research.google.com/pubs/archive/44678.pdf" width="800" height="500"></iframe>
+    </div>
+        <div class="row">
+            <p>&nbsp;</p>
+        </div>
+        <div class="row" style="justify-content:space-around">
+            <div class="col-md-2">
+                <p>&nbsp;</p>
+            </div>
+            <div class="col-md-3 Square">
+                <div>
+                    <circle-progress [percent]="70" [space]="-10" [radius]="80" [outerStrokeWidth]="10"
+                        [innerStrokeWidth]="10" [outerStrokeColor]="'#00bF63'" [innerStrokeColor]="'#e7e8ea'"
+                        [animation]="true" [animationDuration]="1000"></circle-progress>
+                </div>
+            </div>
+            <div class="col-md-1">
+                <p>&nbsp;</p>
+            </div>
+
+            <div class="col-md-3 Square ">
+                <div style="margin-top:10%;align-items: center;">
+                    <p>Weightage: 5%</p>
+                    <p>Toughness:</p>
+                    <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+
+                </div>
+            </div>
+            <div class="col-md-2">
+                <p>&nbsp;</p>
+            </div>
+        </div>
+        <div class="row">
+            <p>&nbsp;</p>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <p>&nbsp;</p>
+            </div>
+            <div class=" col-md-8 CommentSection">
+                <p style="font-size:20px">Comments:</p>
+                <mat-list style="background-color:#cdf55c">
+                    <mat-list-item class="d-flex">Koyna Dalmia</mat-list-item>
+                    <span class="comment">Second line</span>
+                    <mat-divider></mat-divider>
+                    <mat-list-item>Dhairushi Patel</mat-list-item>
+                    <span class="comment">Second line</span>
+                </mat-list>
+            </div>
+        </div>
+        <div class="row">
+            <p>&nbsp;</p>
+        </div>
+        <div style="display:flex; justify-content: center;">
+            <button type="button" class="btn btn-success">Check</button>
+        </div>
+</div>

@@ -1,0 +1,43 @@
+<body class="menu" style="background-color: #DAFF72;">
+    <div >
+        <mat-nav-list *ngIf="menuScreen === 'd'">
+            <full-calendar [options]="calendarOptions" style="--fc-button-text-color: white; --fc-button-bg-color: black; --fc-button-hover-bg-color: black;
+            --fc-button-hover-border-color: #1a252f;"></full-calendar>
+            <a mat-list-item routerLink="/item2">Dashboard</a>
+            <div style="display: block;" >
+                <a mat-list-item routerLink="/item3" style="display: flex; align-items: center;">
+                    <div (click) = "ShowList(10000)" style="display:flex; justify-content: space-between; align-items: center; width: 100%;">
+                        <span>Semester Courses</span>
+                        <span *ngIf = "!courseList"><i class="fa-solid fa-angle-down"></i></span>
+                        <span *ngIf = "courseList"><i class="fa-solid fa-angle-up"></i></span>
+                    </div>
+                </a>
+                <div *ngIf = "courseList">
+                    <mat-nav-list>
+                        <a mat-list-item routerLink="/item2">CSE - 1</a>
+                        <a mat-list-item routerLink="/item2">CSE - 2</a>
+                        <a mat-list-item routerLink="/item2">CSE - 3</a>
+                    </mat-nav-list>
+                </div>    
+            </div>
+            <a mat-list-item routerLink="/item4">Help</a>
+            <a mat-list-item routerLink="/item5">Settings</a>
+        </mat-nav-list>
+        <mat-nav-list *ngIf="menuScreen === 'a'">
+            <ng-container *ngFor="let i of [0, 1, 2, 3, 4]">
+                <mat-list-item>
+                  <div (click)="ShowList(i)" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+                    <span>Session {{ i + 1 }}</span>
+                    <span *ngIf="!showList[i]"><i class="fa-solid fa-angle-down"></i></span>
+                    <span *ngIf="showList[i]"><i class="fa-solid fa-angle-up"></i></span>
+                  </div>
+                </mat-list-item>
+                <mat-nav-list *ngIf="showList[i]" style = "padding-left:25px">
+                  <mat-list-item *ngFor="let j of sessionComponents">
+                    {{ j }}
+                  </mat-list-item>
+                </mat-nav-list>
+              </ng-container>
+        </mat-nav-list> 
+    </div>
+</body>
