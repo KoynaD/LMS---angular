@@ -39,7 +39,7 @@ label{
 }
 input{
 	width: 60%;
-	height: 20px;
+	height: 30px;
 	background: #e0dede;
 	justify-content: center;
 	display: flex;
@@ -67,6 +67,26 @@ button{
 	cursor: pointer;
 }
 button:hover{
+	background: #0d5b12;
+}
+#btn{
+  width: 60%;
+	height: 40px;
+	margin: 10px auto;
+	justify-content: center;
+	display: block;
+	color: #fff;
+	background: #000000;
+	font-size: 1em;
+	font-weight: bold;
+	margin-top: 20px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	transition: .2s ease-in;
+	cursor: pointer;
+}
+#btn:hover{
 	background: #0d5b12;
 }
 .login{
